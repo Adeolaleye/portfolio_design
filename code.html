@@ -1,0 +1,509 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Adeola_Portfolio - Technical Product Manager</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "primary-container": "#8083ff",
+                "tertiary-fixed-dim": "#ffb783",
+                "on-tertiary-fixed-variant": "#703700",
+                "inverse-on-surface": "#2d3137",
+                "surface": "#10141a",
+                "error-container": "#93000a",
+                "secondary-fixed": "#ffddb8",
+                "surface-container-low": "#181c22",
+                "tertiary": "#ffb783",
+                "surface-container": "#1c2026",
+                "on-tertiary": "#4f2500",
+                "surface-tint": "#c0c1ff",
+                "surface-variant": "#31353c",
+                "on-surface": "#dfe2eb",
+                "on-primary-container": "#0d0096",
+                "error": "#ffb4ab",
+                "on-background": "#dfe2eb",
+                "surface-container-high": "#262a31",
+                "secondary": "#ffb95f",
+                "primary-fixed-dim": "#c0c1ff",
+                "on-error": "#690005",
+                "inverse-surface": "#dfe2eb",
+                "tertiary-fixed": "#ffdcc5",
+                "on-primary": "#1000a9",
+                "on-secondary": "#472a00",
+                "glass-border": "rgba(255, 255, 255, 0.1)",
+                "slate-surface": "#1E293B",
+                "on-surface-variant": "#c7c4d7",
+                "text-muted": "#94A3B8",
+                "outline-variant": "#464554",
+                "on-tertiary-container": "#452000",
+                "primary-fixed": "#e1e0ff",
+                "on-secondary-container": "#5b3800",
+                "on-secondary-fixed": "#2a1700",
+                "secondary-fixed-dim": "#ffb95f",
+                "on-secondary-fixed-variant": "#653e00",
+                "secondary-container": "#ee9800",
+                "on-primary-fixed-variant": "#2f2ebe",
+                "background": "#0B0C10",
+                "tertiary-container": "#d97721",
+                "surface-container-highest": "#31353c",
+                "on-tertiary-fixed": "#301400",
+                "inverse-primary": "#494bd6",
+                "surface-dim": "#10141a",
+                "surface-bright": "#353940",
+                "primary": "#c0c1ff",
+                "on-error-container": "#ffdad6",
+                "on-primary-fixed": "#07006c",
+                "surface-container-lowest": "#0a0e14",
+                "outline": "#908fa0"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "container-max": "1200px",
+                "margin-desktop": "64px",
+                "gutter": "24px",
+                "section-gap": "120px",
+                "margin-mobile": "20px"
+        },
+        "fontFamily": {
+                "headline-lg-mobile": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-xl": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "label-caps": [
+                        "JetBrains Mono"
+                ],
+                "body-md": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {
+                "headline-lg-mobile": [
+                        "28px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-xl": [
+                        "48px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-caps": [
+                        "12px",
+                        {
+                                "lineHeight": "1.0",
+                                "letterSpacing": "0.1em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        body {
+            background-color: #0B0C10; /* Dark midnight palette */
+            background-image: radial-gradient(circle at 15% 15%, rgba(192, 193, 255, 0.03) 0%, transparent 40%),
+                              radial-gradient(circle at 85% 85%, rgba(192, 193, 255, 0.02) 0%, transparent 40%);
+            background-attachment: fixed;
+            color: #dfe2eb;
+        }
+        
+        /* Subtle glow for primary elements */
+        .glow-primary {
+            text-shadow: 0 0 20px rgba(192, 193, 255, 0.3);
+        }
+        
+        .btn-glow:hover {
+            box-shadow: 0px 0px 15px rgba(192, 193, 255, 0.4);
+        }
+
+        .glass-card {
+            background-color: #121418; /* Slightly lighter than bg */
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .glass-card:hover {
+            background-color: rgba(24, 28, 34, 0.8);
+            border-color: rgba(192, 193, 255, 0.15);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: rgba(255,255,255,0.05);
+        }
+        
+        /* Italic Serif for emphasis in headlines */
+        .font-serif-italic {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface antialiased overflow-x-hidden min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-glass-border shadow-sm transition-all duration-200 ease-in-out">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop h-20">
+<!-- Brand -->
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center border border-glass-border">
+<span class="font-label-caps text-label-caps text-primary">A</span>
+</div>
+<a class="font-headline-lg-mobile md:font-headline-lg text-primary text-xl" href="#">ADEOLALEYE</a>
+</div>
+<!-- Nav Links (Desktop) -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-medium border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Experience</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Projects</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<!-- CTA -->
+<div class="hidden md:block">
+<a class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primary text-on-primary-fixed font-body-md font-medium transition-all duration-300 btn-glow" href="#">
+                    Let's Talk
+                    <span class="material-symbols-outlined ml-2 text-sm" style="font-variation-settings: &quot;FILL&quot; 0;">arrow_forward</span>
+</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface-variant hover:text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-section-gap">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Hero Text -->
+<div class="lg:col-span-7 flex flex-col gap-8 order-2 lg:order-1">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-glass-border bg-surface-container-lowest/50 w-fit">
+<div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Adeola OSOGBIYE</span>
+</div>
+<h1 class="font-headline-xl text-5xl md:text-7xl text-on-surface tracking-tight font-bold">
+                        Technical <br>
+<span class="font-serif-italic text-primary glow-primary">Product</span> Manager.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        From pharmacy platforms to mobility marketplaces, I turn ambiguous problems into products people actually use. Seven years of shipping across AI, fintech, healthtech and logistics.
+                    </p>
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<a class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-on-primary-fixed font-body-md font-medium transition-all duration-300 btn-glow" href="#">
+                            View case studies
+                            <span class="material-symbols-outlined ml-2 text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-glass-border bg-transparent text-on-surface hover:bg-surface-container-low transition-colors duration-300" href="#">Let's Talk<span class="material-symbols-outlined ml-2 text-[18px]">arrow_downward</span>
+</a>
+
+</div>
+<!-- Stats -->
+
+</div>
+<!-- Hero Image -->
+<div class="lg:col-span-5 order-1 lg:order-2 mb-8 lg:mb-0">
+<div class="glass-card rounded-xl overflow-hidden relative group">
+<div class="absolute top-4 left-4 right-4 flex justify-between items-center z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-lowest/80 backdrop-blur-sm rounded-full">
+<div class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">Available for hire</span>
+</div>
+
+</div>
+<div class="aspect-[0.85] relative bg-surface-container-low">
+<img alt="Adeola Olaleye Professional Headshot" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoJFlGeXbQ2ED5CeOrc9iXQrDIrGWW1KJVCT4rlwjwFIzOMqZg5zvIc-iQ-X6VV70VGKj8ebyHZ9GuBbBzix0Ei22wzshrZ0lSfW9Q_6I5F8-liIGdnRXojDYy593Ym-_IF5nqSFoHjtchrwxa6kUfKaXfHObMpUc2V9tEpVPeQIq07ojZ-1t8RdFcpHV1iwEOf4mNRwKPK-hrc6lcrcG01a5S2FKMiLXjlqfr1i4t7-fu8WHCMgTIV1Cn_jG7JPPInKzu6OuvNugWdg">
+<!-- Overlay Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<!-- Image Caption Area -->
+<div class="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end">
+<div>
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap pt-16">
+<div class="flex items-center justify-between mb-12">
+<div class="flex items-center gap-4 flex-grow">
+<span class="font-label-caps text-label-caps text-primary">§ 01</span>
+<div class="h-[1px] bg-glass-border flex-grow max-w-[200px]"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-[0.2em] uppercase">ABOUT</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-7">
+<h2 class="font-headline-xl text-[40px] md:text-[56px] text-on-surface tracking-tight leading-tight font-bold">
+                        An <span class="font-serif-italic text-primary">engineer</span> who learned to lead products, and a product manager who never stopped thinking like an engineer.
+                    </h2>
+</div>
+<div class="lg:col-span-5">
+<div class="glass-card p-10 rounded-xl h-full flex flex-col justify-center">
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                            I transitioned from backend engineering because I wanted to solve the right problems, not just build features. That foundation lets me bridge engineering feasibility and user needs — turning ambiguity into shipped product. Also a media enthusiast.
+                        </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            Beyond product work at Consode Digital, SeamlessHR and EKDA, I'm deeply invested in the tech ecosystem, leading community initiatives across Google Developer Groups, Women Techmakers and Kwarabuild, and mentoring the next generation of builders.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Competencies Section -->
+<section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="flex items-center justify-between mb-12">
+<div class="flex items-center gap-4 flex-grow">
+<span class="font-label-caps text-label-caps text-primary">§ 02</span>
+<div class="h-[1px] bg-glass-border flex-grow max-w-[200px]"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-[0.2em] uppercase">Core Competencies</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card 1 -->
+<div class="glass-card p-10 rounded-xl group transition-all duration-300 flex flex-col justify-between min-h-[300px]">
+<div>
+<div class="flex justify-between items-start mb-16">
+<div class="w-12 h-12 rounded-full border border-glass-border flex items-center justify-center bg-surface-container-low group-hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px]">smart_toy</span>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant tracking-[0.2em] uppercase">AI Product</span>
+</div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-on-surface mb-4">AI Agents &amp; LLMs</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Hands-on with agent design, prompt engineering, RAG and AI product evaluation. Currently deepening this through the AI PM Intensive.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-10 rounded-xl group transition-all duration-300 flex flex-col justify-between min-h-[300px]">
+<div>
+<div class="flex justify-between items-start mb-16">
+<div class="w-12 h-12 rounded-full border border-glass-border flex items-center justify-center bg-surface-container-low group-hover:border-secondary/50 transition-colors">
+<span class="material-symbols-outlined text-secondary text-[20px]">architecture</span>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant tracking-[0.2em] uppercase">Strategy</span>
+</div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-on-surface mb-4">Product Strategy &amp; PRDs</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Aligning business goals with technical feasibility. Roadmaps, PRDs, MVP phasing, guardrail metrics and rollback plans.
+                    </p>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-10 rounded-xl group transition-all duration-300 flex flex-col justify-between min-h-[300px]">
+<div>
+<div class="flex justify-between items-start mb-16">
+<div class="w-12 h-12 rounded-full border border-glass-border flex items-center justify-center bg-surface-container-low group-hover:border-tertiary-container/50 transition-colors">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">group_work</span>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant tracking-[0.2em] uppercase">Delivery</span>
+</div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-on-surface mb-4">Cross-functional Delivery</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Leading engineering, design and business stakeholders from discovery through launch in agile / scrum environments.
+                    </p>
+</div>
+<!-- Card 4 -->
+<div class="glass-card p-10 rounded-xl group transition-all duration-300 flex flex-col justify-between min-h-[300px]">
+<div>
+<div class="flex justify-between items-start mb-16">
+<div class="w-12 h-12 rounded-full border border-glass-border flex items-center justify-center bg-surface-container-low group-hover:border-primary-fixed/50 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">code_blocks</span>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant tracking-[0.2em] uppercase">Technical</span>
+</div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-on-surface mb-4">APIs, Systems &amp; Architecture</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Ex-backend engineer (PHP / Laravel / SQL / Docker). Fluent in REST APIs, integration design and system feasibility assessment.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="flex items-center justify-between mb-12">
+<div class="flex items-center gap-4 flex-grow">
+<span class="font-label-caps text-label-caps text-primary">§ 03</span>
+<div class="h-[1px] bg-glass-border flex-grow max-w-[200px]"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-[0.2em] uppercase">Skills &amp; Tools</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<h4 class="font-headline-lg-mobile text-on-surface mb-6 border-b border-glass-border pb-4">Product Skills</h4>
+<ul class="space-y-4">
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">Product Strategy &amp; Roadmapping</span></li>
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">Agile / Scrum Methodologies</span></li>
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">User Research &amp; Empathy</span></li>
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">Data-Driven Decision Making</span></li>
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">Cross-functional Leadership</span></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-lg-mobile text-on-surface mb-6 border-b border-glass-border pb-4">Technical Skills</h4>
+<ul class="space-y-4">
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">API Design &amp; Integration</span></li>
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">System Architecture</span></li>
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">SQL &amp; Data Modeling</span></li>
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">Prompt Engineering &amp; AI Concepts</span></li>
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">PHP / Laravel (Previous)</span></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-lg-mobile text-on-surface mb-6 border-b border-glass-border pb-4">Tools</h4>
+<ul class="space-y-4">
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">Jira &amp; Confluence</span></li>
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">Figma &amp; FigJam</span></li>
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">Mixpanel / Amplitude</span></li>
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">Postman</span></li>
+<li class="flex items-start gap-3"><span class="text-primary mt-1">•</span> <span class="text-on-surface-variant">Notion</span></li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Community Section -->
+<section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="flex items-center justify-between mb-12">
+<div class="flex items-center gap-4 flex-grow">
+<span class="font-label-caps text-label-caps text-primary">§ 04</span>
+<div class="h-[1px] bg-glass-border flex-grow max-w-[200px]"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-[0.2em] uppercase">Community</span>
+</div>
+<div class="glass-card p-10 rounded-xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<h4 class="font-headline-lg-mobile text-on-surface mb-4">Google Developer Groups</h4>
+<p class="text-on-surface-variant text-sm">Organizing events, workshops, and fostering a community of developers to learn and build together using Google technologies.</p>
+</div>
+<div>
+<h4 class="font-headline-lg-mobile text-on-surface mb-4">Women Techmakers</h4>
+<p class="text-on-surface-variant text-sm">Empowering women in technology through mentorship, networking, and skill-building initiatives to bridge the gender gap.</p>
+</div>
+<div>
+<h4 class="font-headline-lg-mobile text-on-surface mb-4">Kwarabuild</h4>
+<p class="text-on-surface-variant text-sm">Contributing to the local tech ecosystem by supporting grassroots tech initiatives and encouraging youth participation in tech.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="flex items-center justify-between mb-12">
+<div class="flex items-center gap-4 flex-grow">
+<span class="font-label-caps text-label-caps text-primary">§ 05</span>
+<div class="h-[1px] bg-glass-border flex-grow max-w-[200px]"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-[0.2em] uppercase">Feedback</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="glass-card p-8 rounded-xl relative">
+<span class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-4xl">format_quote</span>
+<p class="text-on-surface-variant italic mb-6 relative z-10">"Adeola is a rare PM who deeply understands both the technical architecture and the user empathy required to build great products. Her leadership at EKDA was instrumental in our recent launch."</p>
+<div>
+<div class="font-bold text-on-surface">Akin Oyedotun</div>
+<div class="text-xs text-on-surface-variant uppercase tracking-wider mt-1">Colleague / Engineering Lead</div>
+</div>
+</div>
+<div class="glass-card p-8 rounded-xl relative">
+<span class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-4xl">format_quote</span>
+<p class="text-on-surface-variant italic mb-6 relative z-10">"Working with Adeola means clarity. She takes the most complex, ambiguous requirements and distills them into actionable, well-phased roadmaps that the whole team can rally behind."</p>
+<div>
+<div class="font-bold text-on-surface">Babatunde Sanusi</div>
+<div class="text-xs text-on-surface-variant uppercase tracking-wider mt-1">Colleague / Product Designer</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Nav Bar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 bg-background/90 backdrop-blur-md border-t border-glass-border px-margin-mobile py-4 flex justify-around items-center">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">home</span>
+<span class="font-label-caps text-[10px]">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary" href="#">
+<span class="material-symbols-outlined">work</span>
+<span class="font-label-caps text-[10px]">Experience</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary" href="#">
+<span class="material-symbols-outlined">folder</span>
+<span class="font-label-caps text-[10px]">Projects</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary" href="#">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label-caps text-[10px]">Contact</span>
+</a>
+</nav>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-background border-t border-glass-border">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-gutter">
+<div>
+<a class="text-headline-lg font-headline-lg text-primary block mb-2" href="#">ADEOLALEYE</a>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 AI Product Manager. All rights reserved.</p>
+</div>
+<div class="flex gap-6 mt-6 md:mt-0">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 cursor-pointer uppercase tracking-widest" href="#">LinkedIn</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-opacity duration-300 cursor-pointer uppercase tracking-widest" href="#">Twitter</a>
+</div></div></footer>
+
+</body></html>
